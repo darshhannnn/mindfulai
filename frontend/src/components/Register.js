@@ -31,9 +31,9 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md mt-10">
-      <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">Sign Up</h1>
-      <form onSubmit={onSubmit} className="space-y-4">
+    <div className="max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg mt-10">
+      <h1 className="text-3xl font-extrabold text-center mb-7 text-gray-800">Create Account</h1>
+      <form onSubmit={onSubmit} className="space-y-5">
         <div>
           <input
             type="text"
@@ -42,7 +42,7 @@ const Register = () => {
             value={username}
             onChange={onChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
           />
         </div>
         <div>
@@ -53,7 +53,7 @@ const Register = () => {
             value={email}
             onChange={onChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
           />
         </div>
         <div>
@@ -64,7 +64,7 @@ const Register = () => {
             value={password}
             onChange={onChange}
             minLength="6"
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
           />
         </div>
         <div>
@@ -75,14 +75,15 @@ const Register = () => {
             value={password2}
             onChange={onChange}
             minLength="6"
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
           />
         </div>
-        <input
+        <button
           type="submit"
-          value="Register"
-          className="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition duration-200 cursor-pointer"
-        />
+          className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200 transform hover:scale-105"
+        >
+          Register
+        </button>
       </form>
     </div>
   );

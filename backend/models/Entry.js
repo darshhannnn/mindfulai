@@ -21,6 +21,10 @@ const EntrySchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
     },
+    crisisDetected: {
+        type: Boolean,
+        default: false,
+    },
 });
 
 module.exports = mongoose.model('Entry', EntrySchema);
